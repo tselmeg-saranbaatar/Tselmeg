@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="a" type="number" placeholder="number 1">
+    <input id="b" type="number" placeholder="number 2">
+    <input id="c" type="number" placeholder="number 3">
+    <input id="d" type="number" placeholder="number 4">
+
+    <button onclick="findMax()">Oloh</button>
+
+    <script>
+function findMax(){
+let a = Number(document.getElementById("a").value);
+let b = Number(document.getElementById("b").value);
+let c = Number(document.getElementById("c").value);
+let d = Number(document.getElementById("d").value);
+
+    let max = a;
+    if (b>max) max=b;
+    if (c>max) max=c;
+    if(d>max) max=d;
+    document.getElementById("result").innerHTML="hamgiin ih: "+max;
+    alert("Hamgiin ih:",max)
+
+}
+    </script>
+</body>
+</html>
